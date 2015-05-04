@@ -1,3 +1,0 @@
-#!/bin/bash
-
-/usr/sbin/alternatives --set java /usr/lib/jvm/`rpm -q java-1.8.0-openjdk`/jre/bin/java

@@ -7,7 +7,7 @@ URL: %{url_prefix}/%{name}
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
-Requires: tomcat6,tomcat6-webapps,tomcat6-admin-webapps
+Requires: tomcat, tomcat-webapps, tomcat-admin-webapps, java-1.7.0-openjdk
 Requires: nethserver-base
 
 BuildRequires: perl

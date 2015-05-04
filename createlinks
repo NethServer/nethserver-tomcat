@@ -30,8 +30,7 @@ use esmith::Build::CreateLinks  qw(:all);
 my $event = "nethserver-tomcat-update";
 
 event_actions($event, 
-                 'initialize-default-databases' => '00',
-                 'nethserver-tomcat-conf' => '20',
+                 'initialize-default-databases' => '00'
              );
-event_services($event, 'tomcat6' => 'restart');
+event_services($event, 'tomcat' => 'restart');
 
