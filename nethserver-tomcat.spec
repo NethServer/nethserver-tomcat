@@ -1,6 +1,6 @@
 Summary: NethServer tomcat configuration
 Name: nethserver-tomcat
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 License: GPL
 URL: %{url_prefix}/%{name} 
@@ -36,3 +36,7 @@ echo "%doc COPYING" >> %{name}-%{version}-filelist
 %defattr(-,root,root)
 
 %changelog
+* Tue May 19 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
+- Tomcat7 application server - Feature #3132 [NethServer]
+- First public release
+
