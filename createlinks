@@ -32,5 +32,10 @@ my $event = "nethserver-tomcat-update";
 event_actions($event, 
                  'initialize-default-databases' => '00'
              );
+
+event_templates($event,
+                 '/etc/sysconfig/tomcat',
+);
+
 event_services($event, 'tomcat' => 'restart');
 
